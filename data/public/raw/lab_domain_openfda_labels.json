@@ -1,0 +1,145 @@
+{
+  "retrieved_at": "2026-07-28T12:49:40.733641+00:00",
+  "domains": [
+    {
+      "canonical_name": "dofetilide",
+      "request": "https://api.fda.gov/drug/label.json?search=openfda.generic_name.exact%3A%22DOFETILIDE%22&limit=100",
+      "primary": {
+        "source": "openFDA Drug Label API",
+        "set_id": "02438044-d6a3-49e9-a1ac-3aad21ef2c8c",
+        "version": "30",
+        "effective_date": "20260421",
+        "manufacturer": "Pfizer Laboratories Div Pfizer Inc",
+        "source_url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name.exact%3A%22DOFETILIDE%22&limit=100"
+      },
+      "external": {
+        "source": "openFDA Drug Label API",
+        "set_id": "0cb2ef7d-e35b-483b-9985-cfef99d7b96f",
+        "version": "7",
+        "effective_date": "20230110",
+        "manufacturer": "Sigmapharm Laboratories, LLC",
+        "source_url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name.exact%3A%22DOFETILIDE%22&limit=100"
+      }
+    },
+    {
+      "canonical_name": "spironolactone",
+      "request": "https://api.fda.gov/drug/label.json?search=openfda.generic_name.exact%3A%22SPIRONOLACTONE%22&limit=100",
+      "primary": {
+        "source": "openFDA Drug Label API",
+        "set_id": "08738ad4-1607-4d55-af71-6790477353bd",
+        "version": "5",
+        "effective_date": "20251119",
+        "manufacturer": "A-S Medication Solutions",
+        "source_url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name.exact%3A%22SPIRONOLACTONE%22&limit=100"
+      },
+      "external": {
+        "source": "openFDA Drug Label API",
+        "set_id": "0c45d793-6f2f-4622-b5ed-6875acfbc02b",
+        "version": "7",
+        "effective_date": "20251229",
+        "manufacturer": "Major Pharmaceuticals",
+        "source_url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name.exact%3A%22SPIRONOLACTONE%22&limit=100"
+      }
+    },
+    {
+      "canonical_name": "clozapine",
+      "request": "https://api.fda.gov/drug/label.json?search=openfda.generic_name.exact%3A%22CLOZAPINE%22&limit=100",
+      "primary": {
+        "source": "openFDA Drug Label API",
+        "set_id": "09231d80-6343-4a34-bd5b-100c547fd3c9",
+        "version": "2",
+        "effective_date": "20260313",
+        "manufacturer": "Safecor Health, LLC",
+        "source_url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name.exact%3A%22CLOZAPINE%22&limit=100"
+      },
+      "external": {
+        "source": "openFDA Drug Label API",
+        "set_id": "0fa59238-f0a6-4d00-9d8d-df2a43718fc1",
+        "version": "2",
+        "effective_date": "20260309",
+        "manufacturer": "Safecor Health LLC",
+        "source_url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name.exact%3A%22CLOZAPINE%22&limit=100"
+      }
+    },
+    {
+      "canonical_name": "heparin",
+      "request": "https://api.fda.gov/drug/label.json?search=openfda.generic_name.exact%3A%22HEPARIN%20SODIUM%22&limit=100",
+      "primary": {
+        "source": "openFDA Drug Label API",
+        "set_id": "02fb700d-a28c-4d45-b78d-382dc0d5986c",
+        "version": "12",
+        "effective_date": "20250926",
+        "manufacturer": "Meitheal Pharmaceuticals Inc.",
+        "source_url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name.exact%3A%22HEPARIN%20SODIUM%22&limit=100"
+      },
+      "external": {
+        "source": "openFDA Drug Label API",
+        "set_id": "0413f511-6b34-4c15-e48b-3fad08baacbe",
+        "version": "31",
+        "effective_date": "20260512",
+        "manufacturer": "Hospira, Inc.",
+        "source_url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name.exact%3A%22HEPARIN%20SODIUM%22&limit=100"
+      }
+    },
+    {
+      "canonical_name": "lithium carbonate",
+      "request": "https://api.fda.gov/drug/label.json?search=openfda.generic_name.exact%3A%22LITHIUM%20CARBONATE%22&limit=100",
+      "primary": {
+        "source": "openFDA Drug Label API",
+        "set_id": "01c4facd-ed79-4078-ba33-2044de372d0f",
+        "version": "1",
+        "effective_date": "20260427",
+        "manufacturer": "REMEDYREPACK INC.",
+        "source_url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name.exact%3A%22LITHIUM%20CARBONATE%22&limit=100"
+      },
+      "external": {
+        "source": "openFDA Drug Label API",
+        "set_id": "04518b80-7563-4544-bf05-04f286223faa",
+        "version": "9",
+        "effective_date": "20221226",
+        "manufacturer": "Camber Pharmaceuticals, Inc.",
+        "source_url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name.exact%3A%22LITHIUM%20CARBONATE%22&limit=100"
+      }
+    },
+    {
+      "canonical_name": "linezolid",
+      "request": "https://api.fda.gov/drug/label.json?search=openfda.generic_name.exact%3A%22LINEZOLID%22&limit=100",
+      "primary": {
+        "source": "openFDA Drug Label API",
+        "set_id": "16007ca5-7956-4414-af38-406a6623400e",
+        "version": "17",
+        "effective_date": "20260715",
+        "manufacturer": "Hikma Pharmaceuticals USA Inc.",
+        "source_url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name.exact%3A%22LINEZOLID%22&limit=100"
+      },
+      "external": {
+        "source": "openFDA Drug Label API",
+        "set_id": "217f3ee2-2534-4c32-8e9d-09b6d65df4af",
+        "version": "3",
+        "effective_date": "20240717",
+        "manufacturer": "Hp Halden Pharma AS",
+        "source_url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name.exact%3A%22LINEZOLID%22&limit=100"
+      }
+    },
+    {
+      "canonical_name": "divalproex sodium",
+      "request": "https://api.fda.gov/drug/label.json?search=openfda.generic_name.exact%3A%22DIVALPROEX%20SODIUM%22&limit=100",
+      "primary": {
+        "source": "openFDA Drug Label API",
+        "set_id": "00332c65-edad-a153-9c78-628931daa732",
+        "version": "39",
+        "effective_date": "20260408",
+        "manufacturer": "Mylan Pharmaceuticals Inc.",
+        "source_url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name.exact%3A%22DIVALPROEX%20SODIUM%22&limit=100"
+      },
+      "external": {
+        "source": "openFDA Drug Label API",
+        "set_id": "02304a23-4a5f-47bc-9687-4044b43f7a20",
+        "version": "18",
+        "effective_date": "20251211",
+        "manufacturer": "Upsher-Smith Laboratories, LLC",
+        "source_url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name.exact%3A%22DIVALPROEX%20SODIUM%22&limit=100"
+      }
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+pair_id,drug_a,drug_b,drugbank_id_a,drugbank_id_b,pubchem_cid_a,pubchem_cid_b,subset_assignment,public_release,primary_source,drugbank_version,drugbank_download_date,mcdex_module,salt_form,license_note
+BL-001,Ceftazidime,Penicillin G,DB00438,DB01053,5481173,5904,demonstration_public,1,DrugBank+PubChem,5.1.8,2025-11-08,,free_base_or_acid,DrugBank academic license; PubChem Terms of Use
+BL-002,Ceftazidime,Amoxicillin,DB00438,DB01060,5481173,33613,demonstration_public,1,DrugBank+PubChem,5.1.8,2025-11-08,,free_base_or_acid,DrugBank academic license; PubChem Terms of Use
+BL-003,Cefazolin,Penicillin V,DB01327,DB00417,23675742,6869,demonstration_public,1,DrugBank+PubChem,5.1.8,2025-11-08,MCDEX_DDI_20241202,free_base_or_acid,DrugBank academic license; PubChem Terms of Use
+BL-004,Cefuroxime,Ampicillin,DB01112,DB00415,5479529,6249,demonstration_public,1,DrugBank+PubChem,5.1.8,2025-11-08,,free_base_or_acid,DrugBank academic license; PubChem Terms of Use
+BL-005,Ceftriaxone,Piperacillin,DB01212,DB00319,5479530,43672,demonstration_public,1,DrugBank+PubChem,5.1.8,2025-11-08,,free_base_or_acid,DrugBank academic license; PubChem Terms of Use
+BL-041,Meropenem,Clarithromycin,DB00760,DB01211,441130,84029,demonstration_public,1,DrugBank,5.1.8,2025-11-08,,free_base_or_acid,DrugBank academic license; PubChem Terms of Use
+BL-042,Cefepime,Imipenem,DB01413,DB01598,5479533,5486192,demonstration_public,1,DrugBank+PubChem,5.1.8,2025-11-08,,free_base_or_acid,DrugBank academic license; PubChem Terms of Use
+BL-043,Cefdinir,Allopurinol,DB00535,DB00437,6915944,135401907,demonstration_public,1,DrugBank+PubChem,5.1.8,2025-11-08,MCDEX_DDI_20241202,free_base_or_acid,DrugBank academic license; PubChem Terms of Use
+BL-044,Cefdinir,Cefepime,DB00535,DB01413,6915944,5479533,demonstration_public,1,DrugBank,5.1.8,2025-11-08,MCDEX_DDI_20241202,free_base_or_acid,DrugBank academic license; PubChem Terms of Use
+BL-045,Cefepime,Clarithromycin,DB01413,DB01211,5479533,84029,demonstration_public,1,DrugBank,5.1.8,2025-11-08,,free_base_or_acid,DrugBank academic license; PubChem Terms of Use
+BL-046,Cefaclor,Cefazolin,DB00833,DB01327,51038,23675742,demonstration_public,1,DrugBank,5.1.8,2025-11-08,,free_base_or_acid,DrugBank academic license; PubChem Terms of Use
+BL-047,Amoxicillin,Cefazolin,DB01060,DB01327,33613,23675742,demonstration_public,1,DrugBank,5.1.8,2025-11-08,,free_base_or_acid,DrugBank academic license; PubChem Terms of Use
+BL-048,Nifedipine,Meropenem,DB01115,DB00760,4485,441130,demonstration_public,1,DrugBank,5.1.8,2025-11-08,,free_base_or_acid,DrugBank academic license; PubChem Terms of Use
+BL-049,Warfarin,Ibuprofen,DB00682,DB01050,54678486,3672,demonstration_public,1,DrugBank+MCDEX,5.1.8,2025-11-08,,free_base_or_acid,DrugBank academic license; PubChem Terms of Use
+BL-050,Penicillin V,Aztreonam,DB00417,DB00355,6869,5746,demonstration_public,1,DrugBank+PubChem,5.1.8,2025-11-08,,free_base_or_acid,DrugBank academic license; PubChem Terms of Use
+BL-051,Cefdinir,Ceftazidime,DB00535,DB00438,6915944,5481173,demonstration_public,1,DrugBank+PubChem,5.1.8,2025-11-08,,free_base_or_acid,DrugBank academic license; PubChem Terms of Use
+BL-052,Ibuprofen,Penicillin G,DB01050,DB01053,3672,5904,demonstration_public,1,DrugBank+MCDEX,5.1.8,2025-11-08,,free_base_or_acid,DrugBank academic license; PubChem Terms of Use
+BL-053,Cefdinir,Allopurinol,DB00535,DB00437,6915944,135401907,demonstration_public,1,DrugBank,5.1.8,2025-11-08,,free_base_or_acid,DrugBank academic license; PubChem Terms of Use
+BL-054,Cefaclor,Allopurinol,DB00833,DB00437,51038,135401907,demonstration_public,1,DrugBank+PubChem,5.1.8,2025-11-08,,free_base_or_acid,DrugBank academic license; PubChem Terms of Use
+BL-055,Ampicillin,Ceftriaxone,DB00415,DB01212,6249,5479530,demonstration_public,1,DrugBank,5.1.8,2025-11-08,,free_base_or_acid,DrugBank academic license; PubChem Terms of Use
+BL-056,Imipenem,Ceftazidime,DB01598,DB00438,5486192,5481173,demonstration_public,1,DrugBank,5.1.8,2025-11-08,,free_base_or_acid,DrugBank academic license; PubChem Terms of Use
+BL-057,Ampicillin,Cefazolin,DB00415,DB01327,6249,23675742,demonstration_public,1,DrugBank,5.1.8,2025-11-08,MCDEX_DDI_20241202,free_base_or_acid,DrugBank academic license; PubChem Terms of Use
+BL-058,Penicillin G,Piperacillin,DB01053,DB00319,5904,43672,demonstration_public,1,DrugBank+PubChem,5.1.8,2025-11-08,,free_base_or_acid,DrugBank academic license; PubChem Terms of Use
+BL-059,Piperacillin,Meropenem,DB00319,DB00760,43672,441130,demonstration_public,1,DrugBank+MCDEX,5.1.8,2025-11-08,,free_base_or_acid,DrugBank academic license; PubChem Terms of Use
+BL-060,Penicillin V,Cefazolin,DB00417,DB01327,6869,23675742,demonstration_public,1,DrugBank+PubChem,5.1.8,2025-11-08,,free_base_or_acid,DrugBank academic license; PubChem Terms of Use
+BL-006,Cefepime,Aztreonam,DB01413,DB00355,5479533,5746,calibration,1,DrugBank,5.1.8,2025-11-08,,free_base_or_acid,DrugBank academic license; PubChem Terms of Use
+BL-007,Meropenem,Imipenem,DB00760,DB01598,441130,5486192,calibration,1,DrugBank,5.1.8,2025-11-08,,free_base_or_acid,DrugBank academic license; PubChem Terms of Use
+BL-008,Ampicillin,Amoxicillin,DB00415,DB01060,6249,33613,calibration,1,DrugBank,5.1.8,2025-11-08,,free_base_or_acid,DrugBank academic license; PubChem Terms of Use
+BL-009,Piperacillin,Tazobactam,DB00319,DB01606,43672,123630,calibration,1,DrugBank,5.1.8,2025-11-08,,free_base_or_acid,DrugBank academic license; PubChem Terms of Use
+BL-010,Cefdinir,Cefaclor,DB00535,DB00833,6915944,51038,calibration,1,DrugBank,5.1.8,2025-11-08,,free_base_or_acid,DrugBank academic license; PubChem Terms of Use
+BL-011,Cefuroxime,Ceftriaxone,DB01112,DB01212,5479529,5479530,calibration,1,DrugBank+MCDEX,5.1.8,2025-11-08,,free_base_or_acid,DrugBank academic license; PubChem Terms of Use
+BL-012,Ceftriaxone,Clarithromycin,DB01212,DB01211,5479530,84029,calibration,1,DrugBank+PubChem,5.1.8,2025-11-08,,free_base_or_acid,DrugBank academic license; PubChem Terms of Use
+BL-013,Ampicillin,Piperacillin,DB00415,DB00319,6249,43672,calibration,1,DrugBank,5.1.8,2025-11-08,,free_base_or_acid,DrugBank academic license; PubChem Terms of Use
+BL-014,Cefepime,Penicillin V,DB01413,DB00417,5479533,6869,calibration,1,DrugBank+MCDEX,5.1.8,2025-11-08,,free_base_or_acid,DrugBank academic license; PubChem Terms of Use
+BL-015,Cefazolin,Clarithromycin,DB01327,DB01211,23675742,84029,calibration,1,DrugBank+MCDEX,5.1.8,2025-11-08,,free_base_or_acid,DrugBank academic license; PubChem Terms of Use
+BL-016,Cefazolin,Cefuroxime,DB01327,DB01112,23675742,5479529,calibration,1,DrugBank+MCDEX,5.1.8,2025-11-08,,free_base_or_acid,DrugBank academic license; PubChem Terms of Use
+BL-017,Warfarin,Ceftriaxone,DB00682,DB01212,54678486,5479530,calibration,1,DrugBank+MCDEX,5.1.8,2025-11-08,,free_base_or_acid,DrugBank academic license; PubChem Terms of Use
+BL-018,Ceftriaxone,Nifedipine,DB01212,DB01115,5479530,4485,calibration,1,DrugBank+PubChem,5.1.8,2025-11-08,,free_base_or_acid,DrugBank academic license; PubChem Terms of Use
+BL-019,Ceftazidime,Imipenem,DB00438,DB01598,5481173,5486192,calibration,1,DrugBank+MCDEX,5.1.8,2025-11-08,MCDEX_DDI_20241202,free_base_or_acid,DrugBank academic license; PubChem Terms of Use
+BL-020,Cefaclor,Allopurinol,DB00833,DB00437,51038,135401907,calibration,1,DrugBank,5.1.8,2025-11-08,,free_base_or_acid,DrugBank academic license; PubChem Terms of Use
+BL-021,Penicillin G,Imipenem,DB01053,DB01598,5904,5486192,calibration,1,DrugBank,5.1.8,2025-11-08,,free_base_or_acid,DrugBank academic license; PubChem Terms of Use
+BL-022,Warfarin,Ampicillin,DB00682,DB00415,54678486,6249,calibration,1,DrugBank+MCDEX,5.1.8,2025-11-08,,free_base_or_acid,DrugBank academic license; PubChem Terms of Use
+BL-023,Imipenem,Aztreonam,DB01598,DB00355,5486192,5746,calibration,1,DrugBank+MCDEX,5.1.8,2025-11-08,,free_base_or_acid,DrugBank academic license; PubChem Terms of Use
+BL-024,Ceftriaxone,Penicillin V,DB01212,DB00417,5479530,6869,calibration,1,DrugBank,5.1.8,2025-11-08,,free_base_or_acid,DrugBank academic license; PubChem Terms of Use
+BL-025,Cefdinir,Cefaclor,DB00535,DB00833,6915944,51038,calibration,1,DrugBank+MCDEX,5.1.8,2025-11-08,,free_base_or_acid,DrugBank academic license; PubChem Terms of Use
+BL-026,Cefdinir,Cefuroxime,DB00535,DB01112,6915944,5479529,calibration,1,DrugBank+PubChem,5.1.8,2025-11-08,,free_base_or_acid,DrugBank academic license; PubChem Terms of Use
+BL-027,Allopurinol,Ceftriaxone,DB00437,DB01212,135401907,5479530,calibration,1,DrugBank+MCDEX,5.1.8,2025-11-08,,free_base_or_acid,DrugBank academic license; PubChem Terms of Use
+BL-028,Cefdinir,Cefepime,DB00535,DB01413,6915944,5479533,calibration,1,DrugBank,5.1.8,2025-11-08,,free_base_or_acid,DrugBank academic license; PubChem Terms of Use
+BL-029,Meropenem,Piperacillin,DB00760,DB00319,441130,43672,calibration,1,DrugBank+MCDEX,5.1.8,2025-11-08,MCDEX_DDI_20241202,free_base_or_acid,DrugBank academic license; PubChem Terms of Use
+BL-030,Meropenem,Warfarin,DB00760,DB00682,441130,54678486,calibration,1,DrugBank,5.1.8,2025-11-08,,free_base_or_acid,DrugBank academic license; PubChem Terms of Use
+BL-031,Meropenem,Imipenem,DB00760,DB01598,441130,5486192,calibration,1,DrugBank+MCDEX,5.1.8,2025-11-08,,free_base_or_acid,DrugBank academic license; PubChem Terms of Use
+BL-032,Imipenem,Cefepime,DB01598,DB01413,5486192,5479533,calibration,1,DrugBank+PubChem,5.1.8,2025-11-08,,free_base_or_acid,DrugBank academic license; PubChem Terms of Use
+BL-033,Nifedipine,Amoxicillin,DB01115,DB01060,4485,33613,calibration,1,DrugBank+MCDEX,5.1.8,2025-11-08,,free_base_or_acid,DrugBank academic license; PubChem Terms of Use
+BL-034,Warfarin,Meropenem,DB00682,DB00760,54678486,441130,calibration,1,DrugBank,5.1.8,2025-11-08,,free_base_or_acid,DrugBank academic license; PubChem Terms of Use
+BL-035,Penicillin G,Aztreonam,DB01053,DB00355,5904,5746,calibration,1,DrugBank+PubChem,5.1.8,2025-11-08,,free_base_or_acid,DrugBank academic license; PubChem Terms of Use
+BL-036,Meropenem,Warfarin,DB00760,DB00682,441130,54678486,calibration,1,DrugBank+MCDEX,5.1.8,2025-11-08,,free_base_or_acid,DrugBank academic license; PubChem Terms of Use
+BL-037,Clarithromycin,Cefepime,DB01211,DB01413,84029,5479533,calibration,1,DrugBank+MCDEX,5.1.8,2025-11-08,,free_base_or_acid,DrugBank academic license; PubChem Terms of Use
+BL-038,Amoxicillin,Penicillin G,DB01060,DB01053,33613,5904,calibration,1,DrugBank+PubChem,5.1.8,2025-11-08,,free_base_or_acid,DrugBank academic license; PubChem Terms of Use
+BL-039,Warfarin,Piperacillin,DB00682,DB00319,54678486,43672,calibration,1,DrugBank+PubChem,5.1.8,2025-11-08,,free_base_or_acid,DrugBank academic license; PubChem Terms of Use
+BL-040,Piperacillin,Cefuroxime,DB00319,DB01112,43672,5479529,calibration,1,DrugBank,5.1.8,2025-11-08,,free_base_or_acid,DrugBank academic license; PubChem Terms of Use

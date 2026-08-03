@@ -1,0 +1,9 @@
+mcp[cli]==1.28.1
+rdkit==2026.3.4
+scikit-learn==1.9.0
+joblib==1.5.3
+transformers==4.57.6
+accelerate==1.14.0
+matplotlib==3.11.1
+locust>=2.31.3
+pytest>=9.0

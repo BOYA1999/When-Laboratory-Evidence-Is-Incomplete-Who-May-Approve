@@ -1,0 +1,133 @@
+﻿model,method,domain,n,tp,tn,fp,fn
+qwen2.5-3b,deterministic_rules,ceftazidime,48,36,12,0,0
+qwen2.5-3b,deterministic_rules,clozapine,48,36,12,0,0
+qwen2.5-3b,deterministic_rules,divalproex sodium,48,36,12,0,0
+qwen2.5-3b,deterministic_rules,dofetilide,48,36,12,0,0
+qwen2.5-3b,deterministic_rules,enoxaparin,48,36,12,0,0
+qwen2.5-3b,deterministic_rules,gabapentin,48,36,12,0,0
+qwen2.5-3b,deterministic_rules,heparin,48,36,0,12,0
+qwen2.5-3b,deterministic_rules,linezolid,48,36,12,0,0
+qwen2.5-3b,deterministic_rules,lithium carbonate,48,36,12,0,0
+qwen2.5-3b,deterministic_rules,metformin,48,36,12,0,0
+qwen2.5-3b,deterministic_rules,spironolactone,48,36,12,0,0
+qwen2.5-3b,mcp_access_only,ceftazidime,48,36,0,12,0
+qwen2.5-3b,mcp_access_only,clozapine,48,36,0,12,0
+qwen2.5-3b,mcp_access_only,divalproex sodium,48,36,0,12,0
+qwen2.5-3b,mcp_access_only,dofetilide,48,36,2,10,0
+qwen2.5-3b,mcp_access_only,enoxaparin,48,36,2,10,0
+qwen2.5-3b,mcp_access_only,gabapentin,48,36,3,9,0
+qwen2.5-3b,mcp_access_only,heparin,48,36,0,12,0
+qwen2.5-3b,mcp_access_only,linezolid,48,36,0,12,0
+qwen2.5-3b,mcp_access_only,lithium carbonate,48,36,0,12,0
+qwen2.5-3b,mcp_access_only,metformin,48,36,0,12,0
+qwen2.5-3b,mcp_access_only,spironolactone,48,36,0,12,0
+qwen2.5-3b,confidence_abstention,ceftazidime,48,36,0,12,0
+qwen2.5-3b,confidence_abstention,clozapine,48,36,0,12,0
+qwen2.5-3b,confidence_abstention,divalproex sodium,48,36,0,12,0
+qwen2.5-3b,confidence_abstention,dofetilide,48,36,0,12,0
+qwen2.5-3b,confidence_abstention,enoxaparin,48,36,0,12,0
+qwen2.5-3b,confidence_abstention,gabapentin,48,36,2,10,0
+qwen2.5-3b,confidence_abstention,heparin,48,36,0,12,0
+qwen2.5-3b,confidence_abstention,linezolid,48,36,0,12,0
+qwen2.5-3b,confidence_abstention,lithium carbonate,48,36,0,12,0
+qwen2.5-3b,confidence_abstention,metformin,48,36,0,12,0
+qwen2.5-3b,confidence_abstention,spironolactone,48,36,0,12,0
+qwen2.5-3b,mcp_governed,ceftazidime,48,36,0,12,0
+qwen2.5-3b,mcp_governed,clozapine,48,36,0,12,0
+qwen2.5-3b,mcp_governed,divalproex sodium,48,36,0,12,0
+qwen2.5-3b,mcp_governed,dofetilide,48,36,2,10,0
+qwen2.5-3b,mcp_governed,enoxaparin,48,36,2,10,0
+qwen2.5-3b,mcp_governed,gabapentin,48,36,3,9,0
+qwen2.5-3b,mcp_governed,heparin,48,36,0,12,0
+qwen2.5-3b,mcp_governed,linezolid,48,36,0,12,0
+qwen2.5-3b,mcp_governed,lithium carbonate,48,36,0,12,0
+qwen2.5-3b,mcp_governed,metformin,48,36,0,12,0
+qwen2.5-3b,mcp_governed,spironolactone,48,36,0,12,0
+smollm2-1.7b,deterministic_rules,ceftazidime,48,36,12,0,0
+smollm2-1.7b,deterministic_rules,clozapine,48,36,12,0,0
+smollm2-1.7b,deterministic_rules,divalproex sodium,48,36,12,0,0
+smollm2-1.7b,deterministic_rules,dofetilide,48,36,12,0,0
+smollm2-1.7b,deterministic_rules,enoxaparin,48,36,12,0,0
+smollm2-1.7b,deterministic_rules,gabapentin,48,36,12,0,0
+smollm2-1.7b,deterministic_rules,heparin,48,36,0,12,0
+smollm2-1.7b,deterministic_rules,linezolid,48,36,12,0,0
+smollm2-1.7b,deterministic_rules,lithium carbonate,48,36,12,0,0
+smollm2-1.7b,deterministic_rules,metformin,48,36,12,0,0
+smollm2-1.7b,deterministic_rules,spironolactone,48,36,12,0,0
+smollm2-1.7b,mcp_access_only,ceftazidime,48,36,0,12,0
+smollm2-1.7b,mcp_access_only,clozapine,48,36,0,12,0
+smollm2-1.7b,mcp_access_only,divalproex sodium,48,36,0,12,0
+smollm2-1.7b,mcp_access_only,dofetilide,48,36,0,12,0
+smollm2-1.7b,mcp_access_only,enoxaparin,48,36,0,12,0
+smollm2-1.7b,mcp_access_only,gabapentin,48,36,0,12,0
+smollm2-1.7b,mcp_access_only,heparin,48,36,0,12,0
+smollm2-1.7b,mcp_access_only,linezolid,48,36,0,12,0
+smollm2-1.7b,mcp_access_only,lithium carbonate,48,36,0,12,0
+smollm2-1.7b,mcp_access_only,metformin,48,36,0,12,0
+smollm2-1.7b,mcp_access_only,spironolactone,48,36,0,12,0
+smollm2-1.7b,confidence_abstention,ceftazidime,48,36,0,12,0
+smollm2-1.7b,confidence_abstention,clozapine,48,36,0,12,0
+smollm2-1.7b,confidence_abstention,divalproex sodium,48,36,0,12,0
+smollm2-1.7b,confidence_abstention,dofetilide,48,36,0,12,0
+smollm2-1.7b,confidence_abstention,enoxaparin,48,36,0,12,0
+smollm2-1.7b,confidence_abstention,gabapentin,48,36,0,12,0
+smollm2-1.7b,confidence_abstention,heparin,48,36,0,12,0
+smollm2-1.7b,confidence_abstention,linezolid,48,36,0,12,0
+smollm2-1.7b,confidence_abstention,lithium carbonate,48,36,0,12,0
+smollm2-1.7b,confidence_abstention,metformin,48,36,0,12,0
+smollm2-1.7b,confidence_abstention,spironolactone,48,36,0,12,0
+smollm2-1.7b,mcp_governed,ceftazidime,48,36,0,12,0
+smollm2-1.7b,mcp_governed,clozapine,48,36,0,12,0
+smollm2-1.7b,mcp_governed,divalproex sodium,48,36,0,12,0
+smollm2-1.7b,mcp_governed,dofetilide,48,36,0,12,0
+smollm2-1.7b,mcp_governed,enoxaparin,48,36,0,12,0
+smollm2-1.7b,mcp_governed,gabapentin,48,36,0,12,0
+smollm2-1.7b,mcp_governed,heparin,48,36,0,12,0
+smollm2-1.7b,mcp_governed,linezolid,48,36,0,12,0
+smollm2-1.7b,mcp_governed,lithium carbonate,48,36,0,12,0
+smollm2-1.7b,mcp_governed,metformin,48,36,0,12,0
+smollm2-1.7b,mcp_governed,spironolactone,48,36,0,12,0
+phi3.5-mini,deterministic_rules,ceftazidime,48,36,12,0,0
+phi3.5-mini,deterministic_rules,clozapine,48,36,12,0,0
+phi3.5-mini,deterministic_rules,divalproex sodium,48,36,12,0,0
+phi3.5-mini,deterministic_rules,dofetilide,48,36,12,0,0
+phi3.5-mini,deterministic_rules,enoxaparin,48,36,12,0,0
+phi3.5-mini,deterministic_rules,gabapentin,48,36,12,0,0
+phi3.5-mini,deterministic_rules,heparin,48,36,0,12,0
+phi3.5-mini,deterministic_rules,linezolid,48,36,12,0,0
+phi3.5-mini,deterministic_rules,lithium carbonate,48,36,12,0,0
+phi3.5-mini,deterministic_rules,metformin,48,36,12,0,0
+phi3.5-mini,deterministic_rules,spironolactone,48,36,12,0,0
+phi3.5-mini,mcp_access_only,ceftazidime,48,30,12,0,6
+phi3.5-mini,mcp_access_only,clozapine,48,29,11,1,7
+phi3.5-mini,mcp_access_only,divalproex sodium,48,36,12,0,0
+phi3.5-mini,mcp_access_only,dofetilide,48,30,12,0,6
+phi3.5-mini,mcp_access_only,enoxaparin,48,28,12,0,8
+phi3.5-mini,mcp_access_only,gabapentin,48,30,12,0,6
+phi3.5-mini,mcp_access_only,heparin,48,36,1,11,0
+phi3.5-mini,mcp_access_only,linezolid,48,36,12,0,0
+phi3.5-mini,mcp_access_only,lithium carbonate,48,36,1,11,0
+phi3.5-mini,mcp_access_only,metformin,48,30,12,0,6
+phi3.5-mini,mcp_access_only,spironolactone,48,36,12,0,0
+phi3.5-mini,confidence_abstention,ceftazidime,48,36,8,4,0
+phi3.5-mini,confidence_abstention,clozapine,48,30,10,2,6
+phi3.5-mini,confidence_abstention,divalproex sodium,48,36,12,0,0
+phi3.5-mini,confidence_abstention,dofetilide,48,32,12,0,4
+phi3.5-mini,confidence_abstention,enoxaparin,48,30,12,0,6
+phi3.5-mini,confidence_abstention,gabapentin,48,30,12,0,6
+phi3.5-mini,confidence_abstention,heparin,48,36,0,12,0
+phi3.5-mini,confidence_abstention,linezolid,48,36,6,6,0
+phi3.5-mini,confidence_abstention,lithium carbonate,48,36,0,12,0
+phi3.5-mini,confidence_abstention,metformin,48,32,10,2,4
+phi3.5-mini,confidence_abstention,spironolactone,48,36,10,2,0
+phi3.5-mini,mcp_governed,ceftazidime,48,36,12,0,0
+phi3.5-mini,mcp_governed,clozapine,48,36,11,1,0
+phi3.5-mini,mcp_governed,divalproex sodium,48,36,12,0,0
+phi3.5-mini,mcp_governed,dofetilide,48,36,12,0,0
+phi3.5-mini,mcp_governed,enoxaparin,48,36,12,0,0
+phi3.5-mini,mcp_governed,gabapentin,48,36,12,0,0
+phi3.5-mini,mcp_governed,heparin,48,36,0,12,0
+phi3.5-mini,mcp_governed,linezolid,48,36,12,0,0
+phi3.5-mini,mcp_governed,lithium carbonate,48,36,1,11,0
+phi3.5-mini,mcp_governed,metformin,48,36,12,0,0
+phi3.5-mini,mcp_governed,spironolactone,48,36,12,0,0

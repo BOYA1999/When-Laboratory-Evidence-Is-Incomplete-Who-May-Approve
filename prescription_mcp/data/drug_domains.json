@@ -1,0 +1,132 @@
+{
+  "schema_version": "1.0",
+  "evidence_sections": [
+    "Indications and Usage",
+    "Dosage and Administration",
+    "Contraindications",
+    "Warnings and Precautions",
+    "Drug Interactions",
+    "Special Populations"
+  ],
+  "domains": [
+    {
+      "canonical_name": "ceftazidime",
+      "aliases": ["ceftazidime", "ceftazidime injection"],
+      "validation_status": "sentinel_validated",
+      "required_fields": ["dose_mg", "frequency"],
+      "label": {
+        "source": "openFDA Drug Label API",
+        "set_id": "112c5457-8d71-49f5-b531-9761d7d38c93",
+        "version": "11",
+        "effective_date": "2020-10-05",
+        "manufacturer": "Sagent Pharmaceuticals",
+        "source_url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name:%22ceftazidime%22&limit=1",
+        "sections": {
+          "Indications and Usage": "indications_and_usage",
+          "Dosage and Administration": "dosage_and_administration",
+          "Contraindications": "contraindications",
+          "Warnings and Precautions": "warnings",
+          "Drug Interactions": "drug_interactions",
+          "Special Populations": "geriatric_use"
+        }
+      },
+      "rules": [
+        {
+          "id": "CEFT-RENAL-001",
+          "section": "Dosage and Administration",
+          "condition_text": "Ceftazidime dosage requires review when GFR or creatinine clearance is below 50 mL/min.",
+          "action_text": "Pharmacist should verify the indication-specific renal dose and interval.",
+          "severity": "moderate",
+          "rule_type": "numeric",
+          "keywords": ["egfr", "crcl", "renal", "creatinine", "dose"],
+          "threshold": 50.0,
+          "threshold_operator": "<",
+          "high_risk": true,
+          "source_span": "The label recommends dosage reduction when GFR is below 50 mL/min."
+        },
+        {
+          "id": "CEFT-ALLERGY-001",
+          "section": "Warnings and Precautions",
+          "condition_text": "Ceftazidime requires allergy review for prior immediate reactions to ceftazidime, cephalosporins, or penicillins.",
+          "action_text": "Escalate for pharmacist allergy and cross-reactivity assessment.",
+          "severity": "high",
+          "rule_type": "allergy",
+          "keywords": ["penicillin", "cephalosporin", "ceftazidime", "anaphylaxis"],
+          "high_risk": true,
+          "source_span": "The warning requires inquiry about prior hypersensitivity to ceftazidime, cephalosporins, penicillins, or other drugs."
+        }
+      ]
+    },
+    {
+      "canonical_name": "nifedipine extended-release",
+      "aliases": ["nifedipine gits", "nifedipine extended release", "nifedipine extended-release"],
+      "validation_status": "sentinel_validated",
+      "required_fields": ["dose_mg", "frequency", "formulation"],
+      "inferred_fields": {"formulation": "extended_release"},
+      "label": {
+        "source": "openFDA Drug Label API",
+        "set_id": "09a04e5f-d3b0-4ee3-b12d-f74203262179",
+        "version": "1",
+        "effective_date": "2019-06-06",
+        "manufacturer": "Aphena Pharma Solutions - Tennessee, LLC",
+        "source_url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name:%22nifedipine%22&limit=1",
+        "sections": {
+          "Indications and Usage": "indications_and_usage",
+          "Dosage and Administration": "dosage_and_administration",
+          "Contraindications": "contraindications",
+          "Warnings and Precautions": "warnings",
+          "Drug Interactions": "drug_interactions",
+          "Special Populations": "geriatric_use"
+        }
+      },
+      "rules": [
+        {
+          "id": "NIFE-FORM-001",
+          "section": "Dosage and Administration",
+          "condition_text": "Nifedipine extended-release tablets must be swallowed whole and must not be bitten or divided.",
+          "action_text": "Escalate altered or uncertain extended-release tablet administration for pharmacist review.",
+          "severity": "high",
+          "rule_type": "formulation",
+          "keywords": ["crushed", "chewed", "bitten", "divided", "split"],
+          "high_risk": true,
+          "source_span": "The label states that the extended-release tablet should be swallowed whole and not bitten or divided."
+        }
+      ]
+    },
+    {
+      "canonical_name": "warfarin",
+      "aliases": ["warfarin", "warfarin sodium"],
+      "validation_status": "sentinel_validated",
+      "required_fields": ["dose_mg", "frequency"],
+      "label": {
+        "source": "openFDA Drug Label API",
+        "set_id": "0cbce382-9c88-4f58-ae0f-532a841e8f95",
+        "version": "20",
+        "effective_date": "2025-06-17",
+        "manufacturer": "Teva Pharmaceuticals USA, Inc.",
+        "source_url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name:%22warfarin%20sodium%22&limit=1",
+        "sections": {
+          "Indications and Usage": "indications_and_usage",
+          "Dosage and Administration": "dosage_and_administration",
+          "Contraindications": "contraindications",
+          "Warnings and Precautions": "warnings_and_precautions",
+          "Drug Interactions": "drug_interactions",
+          "Special Populations": "use_in_specific_populations"
+        }
+      },
+      "rules": [
+        {
+          "id": "WARF-NSAID-001",
+          "section": "Drug Interactions",
+          "condition_text": "Concomitant warfarin and non-steroidal anti-inflammatory treatment increases bleeding risk.",
+          "action_text": "High-severity pharmacist review for bleeding-risk interaction.",
+          "severity": "high",
+          "rule_type": "interaction",
+          "keywords": ["drug:warfarin", "drug:ibuprofen", "nsaid", "interaction", "bleeding"],
+          "high_risk": true,
+          "source_span": "The interaction section lists ibuprofen among non-steroidal anti-inflammatory agents that increase bleeding risk."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "source": "PubChem PUG REST",
+  "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/3672,4485,5746,5904,6249,6869,33613,43672,51038,84029,123630,441130,5479529,5479530,5479533,5481173,5486192,6915944,23675742,54678486,135401907/property/CanonicalSMILES,IsomericSMILES,InChIKey/JSON",
+  "retrieved_at": "2026-07-27T12:05:52.801979+00:00",
+  "rdkit_input_policy": "PubChem stereochemical SMILES when available",
+  "structures": {
+    "ibuprofen": {
+      "cid": 3672,
+      "smiles": "CC(C)CC1=CC=C(C=C1)C(C)C(=O)O",
+      "connectivity_smiles": "CC(C)CC1=CC=C(C=C1)C(C)C(=O)O",
+      "inchikey": "HEFNNWSXXWATRW-UHFFFAOYSA-N"
+    },
+    "nifedipine": {
+      "cid": 4485,
+      "smiles": "CC1=C(C(C(=C(N1)C)C(=O)OC)C2=CC=CC=C2[N+](=O)[O-])C(=O)OC",
+      "connectivity_smiles": "CC1=C(C(C(=C(N1)C)C(=O)OC)C2=CC=CC=C2[N+](=O)[O-])C(=O)OC",
+      "inchikey": "HYIMSNHJOBLJNT-UHFFFAOYSA-N"
+    },
+    "aztreonam": {
+      "cid": 5746,
+      "smiles": "CC1=C(C(=O)C2=C(C1=O)N3C[C@H]4[C@@H]([C@@]3([C@@H]2COC(=O)N)OC)N4)N",
+      "connectivity_smiles": "CC1=C(C(=O)C2=C(C1=O)N3CC4C(C3(C2COC(=O)N)OC)N4)N",
+      "inchikey": "NWIBSHFKIJFRCO-WUDYKRTCSA-N"
+    },
+    "penicillin g": {
+      "cid": 5904,
+      "smiles": "CC1([C@@H](N2[C@H](S1)[C@@H](C2=O)NC(=O)CC3=CC=CC=C3)C(=O)O)C",
+      "connectivity_smiles": "CC1(C(N2C(S1)C(C2=O)NC(=O)CC3=CC=CC=C3)C(=O)O)C",
+      "inchikey": "JGSARLDLIJGVTE-MBNYWOFBSA-N"
+    },
+    "ampicillin": {
+      "cid": 6249,
+      "smiles": "CC1([C@@H](N2[C@H](S1)[C@@H](C2=O)NC(=O)[C@@H](C3=CC=CC=C3)N)C(=O)O)C",
+      "connectivity_smiles": "CC1(C(N2C(S1)C(C2=O)NC(=O)C(C3=CC=CC=C3)N)C(=O)O)C",
+      "inchikey": "AVKUERGKIZMTKX-NJBDSQKTSA-N"
+    },
+    "penicillin v": {
+      "cid": 6869,
+      "smiles": "CC1([C@@H](N2[C@H](S1)[C@@H](C2=O)NC(=O)COC3=CC=CC=C3)C(=O)O)C",
+      "connectivity_smiles": "CC1(C(N2C(S1)C(C2=O)NC(=O)COC3=CC=CC=C3)C(=O)O)C",
+      "inchikey": "BPLBGHOLXOTWMN-MBNYWOFBSA-N"
+    },
+    "amoxicillin": {
+      "cid": 33613,
+      "smiles": "CC1([C@@H](N2[C@H](S1)[C@@H](C2=O)NC(=O)[C@@H](C3=CC=C(C=C3)O)N)C(=O)O)C",
+      "connectivity_smiles": "CC1(C(N2C(S1)C(C2=O)NC(=O)C(C3=CC=C(C=C3)O)N)C(=O)O)C",
+      "inchikey": "LSQZJLSUYDQPKJ-NJBDSQKTSA-N"
+    },
+    "piperacillin": {
+      "cid": 43672,
+      "smiles": "CCN1CCN(C(=O)C1=O)C(=O)N[C@H](C2=CC=CC=C2)C(=O)N[C@H]3[C@@H]4N(C3=O)[C@H](C(S4)(C)C)C(=O)O",
+      "connectivity_smiles": "CCN1CCN(C(=O)C1=O)C(=O)NC(C2=CC=CC=C2)C(=O)NC3C4N(C3=O)C(C(S4)(C)C)C(=O)O",
+      "inchikey": "IVBHGBMCVLDMKU-GXNBUGAJSA-N"
+    },
+    "cefaclor": {
+      "cid": 51038,
+      "smiles": "C1C(=C(N2[C@H](S1)[C@@H](C2=O)NC(=O)[C@@H](C3=CC=CC=C3)N)C(=O)O)Cl.O",
+      "connectivity_smiles": "C1C(=C(N2C(S1)C(C2=O)NC(=O)C(C3=CC=CC=C3)N)C(=O)O)Cl.O",
+      "inchikey": "WKJGTOYAEQDNIA-IOOZKYRYSA-N"
+    },
+    "clarithromycin": {
+      "cid": 84029,
+      "smiles": "CC[C@@H]1[C@@]([C@@H]([C@H](C(=O)[C@@H](C[C@@]([C@@H]([C@H]([C@@H]([C@H](C(=O)O1)C)O[C@H]2C[C@@]([C@H]([C@@H](O2)C)O)(C)OC)C)O[C@H]3[C@@H]([C@H](C[C@H](O3)C)N(C)C)O)(C)OC)C)C)O)(C)O",
+      "connectivity_smiles": "CCC1C(C(C(C(=O)C(CC(C(C(C(C(C(=O)O1)C)OC2CC(C(C(O2)C)O)(C)OC)C)OC3C(C(CC(O3)C)N(C)C)O)(C)OC)C)C)O)(C)O",
+      "inchikey": "AGOYDEPGAOXOCK-KCBOHYOISA-N"
+    },
+    "tazobactam": {
+      "cid": 123630,
+      "smiles": "C[C@@]1([C@@H](N2[C@H](S1(=O)=O)CC2=O)C(=O)O)CN3C=CN=N3",
+      "connectivity_smiles": "CC1(C(N2C(S1(=O)=O)CC2=O)C(=O)O)CN3C=CN=N3",
+      "inchikey": "LPQZKKCYTLCDGQ-WEDXCCLWSA-N"
+    },
+    "meropenem": {
+      "cid": 441130,
+      "smiles": "C[C@@H]1[C@@H]2[C@H](C(=O)N2C(=C1S[C@H]3C[C@H](NC3)C(=O)N(C)C)C(=O)O)[C@@H](C)O",
+      "connectivity_smiles": "CC1C2C(C(=O)N2C(=C1SC3CC(NC3)C(=O)N(C)C)C(=O)O)C(C)O",
+      "inchikey": "DMJNNHOOLUXYBV-PQTSNVLCSA-N"
+    },
+    "cefuroxime": {
+      "cid": 5479529,
+      "smiles": "CO/N=C(/C1=CC=CO1)\\C(=O)N[C@H]2[C@@H]3N(C2=O)C(=C(CS3)COC(=O)N)C(=O)O",
+      "connectivity_smiles": "CON=C(C1=CC=CO1)C(=O)NC2C3N(C2=O)C(=C(CS3)COC(=O)N)C(=O)O",
+      "inchikey": "JFPVXVDWJQMJEE-IZRZKJBUSA-N"
+    },
+    "ceftriaxone": {
+      "cid": 5479530,
+      "smiles": "CN1C(=NC(=O)C(=O)N1)SCC2=C(N3[C@@H]([C@@H](C3=O)NC(=O)/C(=N\\OC)/C4=CSC(=N4)N)SC2)C(=O)O",
+      "connectivity_smiles": "CN1C(=NC(=O)C(=O)N1)SCC2=C(N3C(C(C3=O)NC(=O)C(=NOC)C4=CSC(=N4)N)SC2)C(=O)O",
+      "inchikey": "VAAUVRVFOQPIGI-SPQHTLEESA-N"
+    },
+    "cefepime": {
+      "cid": 5479533,
+      "smiles": "C[C@H]1C=CC=C(C(=O)NC\\2=C(C3=C(C4=C(C(=C3O)C)O[C@@](C4=O)(OC=C[C@@H]([C@H]([C@H]([C@@H]([C@@H]([C@@H]([C@H]1O)C)O)C)O)C)OC)C)C(=O)/C2=C/NN5CCN(CC5)C6CCCC6)O)C",
+      "connectivity_smiles": "CC1C=CC=C(C(=O)NC2=C(C3=C(C4=C(C(=C3O)C)OC(C4=O)(OC=CC(C(C(C(C(C(C1O)C)O)C)O)C)OC)C)C(=O)C2=CNN5CCN(CC5)C6CCCC6)O)C",
+      "inchikey": "JHANSSSOQIRYCV-AIYQNMLSSA-N"
+    },
+    "ceftazidime": {
+      "cid": 5481173,
+      "smiles": "CC(C)(C(=O)O)O/N=C(/C1=CSC(=N1)N)\\C(=O)N[C@H]2[C@@H]3N(C2=O)C(=C(CS3)C[N+]4=CC=CC=C4)C(=O)[O-]",
+      "connectivity_smiles": "CC(C)(C(=O)O)ON=C(C1=CSC(=N1)N)C(=O)NC2C3N(C2=O)C(=C(CS3)C[N+]4=CC=CC=C4)C(=O)[O-]",
+      "inchikey": "ORFOPKXBNMVMKC-DWVKKRMSSA-N"
+    },
+    "imipenem": {
+      "cid": 5486192,
+      "smiles": "C[C@@H](C(=O)N[C@@H](CS)C(=O)NCC(=O)N[C@@H](CCCCN)C(=O)N[C@@H](CC(=O)N)C(=O)N[C@@H](CC1=CC=C(C=C1)O)C(=O)N[C@@H](CO)C(=O)N[C@@H](CS)C(=O)N)NC(=O)[C@@H]2CCCN2C(=O)C(CC3=CN=CN3)NC(=O)[C@H](CS)NC(=O)C(CC(=O)[C@H](CCCN=C(N)N)NC(=O)CN)CS",
+      "connectivity_smiles": "CC(C(=O)NC(CS)C(=O)NCC(=O)NC(CCCCN)C(=O)NC(CC(=O)N)C(=O)NC(CC1=CC=C(C=C1)O)C(=O)NC(CO)C(=O)NC(CS)C(=O)N)NC(=O)C2CCCN2C(=O)C(CC3=CN=CN3)NC(=O)C(CS)NC(=O)C(CC(=O)C(CCCN=C(N)N)NC(=O)CN)CS",
+      "inchikey": "YXBQTKPMFURSAT-AZDLGQIMSA-N"
+    },
+    "cefdinir": {
+      "cid": 6915944,
+      "smiles": "C=CC1=C(N2[C@@H]([C@@H](C2=O)NC(=O)/C(=N\\O)/C3=CSC(=N3)N)SC1)C(=O)O",
+      "connectivity_smiles": "C=CC1=C(N2C(C(C2=O)NC(=O)C(=NO)C3=CSC(=N3)N)SC1)C(=O)O",
+      "inchikey": "RTXOFQZKPXMALH-GHXIOONMSA-N"
+    },
+    "cefazolin": {
+      "cid": 23675742,
+      "smiles": "C1CCC(CC1)(CC(=O)[O-])CO.[Na+]",
+      "connectivity_smiles": "C1CCC(CC1)(CC(=O)[O-])CO.[Na+]",
+      "inchikey": "YPKROQTVZNJPNX-UHFFFAOYSA-M"
+    },
+    "warfarin": {
+      "cid": 54678486,
+      "smiles": "CC(=O)CC(C1=CC=CC=C1)C2=C(C3=CC=CC=C3OC2=O)O",
+      "connectivity_smiles": "CC(=O)CC(C1=CC=CC=C1)C2=C(C3=CC=CC=C3OC2=O)O",
+      "inchikey": "PJVWKTKQMONHTI-UHFFFAOYSA-N"
+    },
+    "allopurinol": {
+      "cid": 135401907,
+      "smiles": "C1=NNC2=C1C(=O)NC=N2",
+      "connectivity_smiles": "C1=NNC2=C1C(=O)NC=N2",
+      "inchikey": "OFCNXPDARWKPPY-UHFFFAOYSA-N"
+    },
+    "penicillin": {
+      "cid": 5904,
+      "smiles": "CC1([C@@H](N2[C@H](S1)[C@@H](C2=O)NC(=O)CC3=CC=CC=C3)C(=O)O)C",
+      "connectivity_smiles": "CC1(C(N2C(S1)C(C2=O)NC(=O)CC3=CC=CC=C3)C(=O)O)C",
+      "inchikey": "JGSARLDLIJGVTE-MBNYWOFBSA-N"
+    }
+  }
+}

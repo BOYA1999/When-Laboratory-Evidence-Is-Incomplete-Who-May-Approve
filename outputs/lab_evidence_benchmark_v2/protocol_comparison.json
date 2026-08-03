@@ -1,0 +1,21 @@
+{
+  "cases": 660,
+  "main_cases": 528,
+  "boundary_cases": 132,
+  "domains": 11,
+  "main_cases_per_domain": 48,
+  "boundary_cases_per_domain": 12,
+  "unique_prompt_count": 660,
+  "context_equality": 1.0,
+  "decision_equality": 1.0,
+  "latency_ms": {
+    "direct_context_median": 0.03369999967617332,
+    "direct_context_p95": 0.05420499978754378,
+    "mcp_context_median": 2.5468499998169136,
+    "mcp_context_p95": 3.1288450005831687,
+    "direct_review_median": 0.17779999961931026,
+    "direct_review_p95": 0.34202999954686664,
+    "mcp_review_median": 2.9800500001329056,
+    "mcp_review_p95": 3.8030499994874836
+  }
+}

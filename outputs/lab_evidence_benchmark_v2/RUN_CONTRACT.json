@@ -1,0 +1,16 @@
+{
+  "seed": 20260728,
+  "models": {
+    "qwen2.5-3b": "Qwen/Qwen2.5-3B-Instruct",
+    "smollm2-1.7b": "HuggingFaceTB/SmolLM2-1.7B-Instruct",
+    "phi3.5-mini": "microsoft/Phi-3.5-mini-instruct"
+  },
+  "confidence_threshold": 0.6,
+  "bootstrap_repetitions": 10000,
+  "files": {
+    "scripts/run_lab_evidence_benchmark.py": "87db251b796c98f43bd8ccc639db22cc10a207cf2f9258303fca490f31082a73",
+    "prescription_mcp/orchestrator.py": "af9d630f9a4a50368e1280890ebcf3d5203440ae73e3d68b973344b0c4de8875",
+    "prescription_mcp/data/drug_domains_19.json": "2eeb837deb7e19468158b43d3fd76ea5f88c03b0f567d4cab605c69378759675",
+    "mcp_server.py": "a189483f573b41fa02ed5483df25f9bed98f34b7ef4a270c1a93ee3d0fe2e964"
+  }
+}

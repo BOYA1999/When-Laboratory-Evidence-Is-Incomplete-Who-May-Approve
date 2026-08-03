@@ -1,0 +1,631 @@
+{
+  "schema_version": "2.1-public-12-domain",
+  "evidence_sections": [
+    "Indications and Usage",
+    "Dosage and Administration",
+    "Contraindications",
+    "Warnings and Precautions",
+    "Drug Interactions",
+    "Special Populations"
+  ],
+  "domains": [
+    {
+      "canonical_name": "ceftazidime",
+      "aliases": [
+        "ceftazidime",
+        "ceftazidime injection"
+      ],
+      "validation_status": "sentinel_validated",
+      "required_fields": [
+        "dose_mg",
+        "frequency"
+      ],
+      "label": {
+        "source": "openFDA Drug Label API",
+        "set_id": "112c5457-8d71-49f5-b531-9761d7d38c93",
+        "version": "11",
+        "effective_date": "2020-10-05",
+        "manufacturer": "Sagent Pharmaceuticals",
+        "source_url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name:%22ceftazidime%22&limit=1",
+        "sections": {
+          "Indications and Usage": "indications_and_usage",
+          "Dosage and Administration": "dosage_and_administration",
+          "Contraindications": "contraindications",
+          "Warnings and Precautions": "warnings",
+          "Drug Interactions": "drug_interactions",
+          "Special Populations": "geriatric_use"
+        }
+      },
+      "rules": [
+        {
+          "id": "CEFT-RENAL-001",
+          "section": "Dosage and Administration",
+          "condition_text": "Ceftazidime dosage requires review when GFR or creatinine clearance is below 50 mL/min.",
+          "action_text": "Pharmacist should verify the indication-specific renal dose and interval.",
+          "severity": "moderate",
+          "rule_type": "numeric",
+          "keywords": [
+            "egfr",
+            "crcl",
+            "renal",
+            "creatinine",
+            "dose"
+          ],
+          "threshold": 50.0,
+          "threshold_operator": "<",
+          "high_risk": true,
+          "source_span": "The label recommends dosage reduction when GFR is below 50 mL/min."
+        },
+        {
+          "id": "CEFT-ALLERGY-001",
+          "section": "Warnings and Precautions",
+          "condition_text": "Ceftazidime requires allergy review for prior immediate reactions to ceftazidime, cephalosporins, or penicillins.",
+          "action_text": "Escalate for pharmacist allergy and cross-reactivity assessment.",
+          "severity": "high",
+          "rule_type": "allergy",
+          "keywords": [
+            "penicillin",
+            "cephalosporin",
+            "ceftazidime",
+            "anaphylaxis"
+          ],
+          "high_risk": true,
+          "source_span": "The warning requires inquiry about prior hypersensitivity to ceftazidime, cephalosporins, penicillins, or other drugs."
+        }
+      ]
+    },
+    {
+      "canonical_name": "nifedipine extended-release",
+      "aliases": [
+        "nifedipine gits",
+        "nifedipine extended release",
+        "nifedipine extended-release"
+      ],
+      "validation_status": "sentinel_validated",
+      "required_fields": [
+        "dose_mg",
+        "frequency",
+        "formulation"
+      ],
+      "inferred_fields": {
+        "formulation": "extended_release"
+      },
+      "label": {
+        "source": "openFDA Drug Label API",
+        "set_id": "09a04e5f-d3b0-4ee3-b12d-f74203262179",
+        "version": "1",
+        "effective_date": "2019-06-06",
+        "manufacturer": "Aphena Pharma Solutions - Tennessee, LLC",
+        "source_url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name:%22nifedipine%22&limit=1",
+        "sections": {
+          "Indications and Usage": "indications_and_usage",
+          "Dosage and Administration": "dosage_and_administration",
+          "Contraindications": "contraindications",
+          "Warnings and Precautions": "warnings",
+          "Drug Interactions": "drug_interactions",
+          "Special Populations": "geriatric_use"
+        }
+      },
+      "rules": [
+        {
+          "id": "NIFE-FORM-001",
+          "section": "Dosage and Administration",
+          "condition_text": "Nifedipine extended-release tablets must be swallowed whole and must not be bitten or divided.",
+          "action_text": "Escalate altered or uncertain extended-release tablet administration for pharmacist review.",
+          "severity": "high",
+          "rule_type": "formulation",
+          "keywords": [
+            "crushed",
+            "chewed",
+            "bitten",
+            "divided",
+            "split"
+          ],
+          "high_risk": true,
+          "source_span": "The label states that the extended-release tablet should be swallowed whole and not bitten or divided."
+        }
+      ]
+    },
+    {
+      "canonical_name": "warfarin",
+      "aliases": [
+        "warfarin",
+        "warfarin sodium"
+      ],
+      "validation_status": "sentinel_validated",
+      "required_fields": [
+        "dose_mg",
+        "frequency"
+      ],
+      "label": {
+        "source": "openFDA Drug Label API",
+        "set_id": "0cbce382-9c88-4f58-ae0f-532a841e8f95",
+        "version": "20",
+        "effective_date": "2025-06-17",
+        "manufacturer": "Teva Pharmaceuticals USA, Inc.",
+        "source_url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name:%22warfarin%20sodium%22&limit=1",
+        "sections": {
+          "Indications and Usage": "indications_and_usage",
+          "Dosage and Administration": "dosage_and_administration",
+          "Contraindications": "contraindications",
+          "Warnings and Precautions": "warnings_and_precautions",
+          "Drug Interactions": "drug_interactions",
+          "Special Populations": "use_in_specific_populations"
+        }
+      },
+      "rules": [
+        {
+          "id": "WARF-NSAID-001",
+          "section": "Drug Interactions",
+          "condition_text": "Concomitant warfarin and non-steroidal anti-inflammatory treatment increases bleeding risk.",
+          "action_text": "High-severity pharmacist review for bleeding-risk interaction.",
+          "severity": "high",
+          "rule_type": "interaction",
+          "keywords": [
+            "drug:warfarin",
+            "drug:ibuprofen",
+            "nsaid",
+            "interaction",
+            "bleeding"
+          ],
+          "high_risk": true,
+          "source_span": "The interaction section lists ibuprofen among non-steroidal anti-inflammatory agents that increase bleeding risk."
+        }
+      ]
+    },
+    {
+      "canonical_name": "metformin",
+      "aliases": [
+        "metformin",
+        "metformin hydrochloride"
+      ],
+      "validation_status": "public_extended_validation",
+      "required_fields": [
+        "dose_mg",
+        "frequency"
+      ],
+      "label": {
+        "source": "openFDA Drug Label API",
+        "set_id": "011de1a5-1ac0-4831-9e8d-26ec79ba2205",
+        "version": "6",
+        "effective_date": "20240821",
+        "manufacturer": "A-S Medication Solutions",
+        "source_url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name.exact%3A%22METFORMIN%20HYDROCHLORIDE%22&limit=100"
+      },
+      "external_label": {
+        "source": "openFDA Drug Label API",
+        "set_id": "014f2a32-8440-4d0c-8f5d-c4b3a49e0dec",
+        "version": "1",
+        "effective_date": "20260505",
+        "manufacturer": "REMEDYREPACK INC.",
+        "source_url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name.exact%3A%22METFORMIN%20HYDROCHLORIDE%22&limit=100"
+      },
+      "rules": [
+        {
+          "id": "METF-RENAL-001",
+          "section": "Dosage and Administration",
+          "condition_text": "Metformin requires review when eGFR is below 30 mL/min/1.73 m2.",
+          "action_text": "Escalate for renal contraindication review.",
+          "severity": "critical",
+          "rule_type": "numeric",
+          "keywords": [
+            "egfr",
+            "renal",
+            "creatinine",
+            "dose"
+          ],
+          "threshold": 30.0,
+          "threshold_operator": "<",
+          "high_risk": true,
+          "source_span": "initiation, assess renal function with estimated glomerular filtration rate (eGFR) ( 2.3 ) Do not use in patients with eGFR below 30 mL/minute/1.73 m 2 ( 2.3 ) Initiation is not recommended in patients with eGFR between 30 to 45 mL/minute/1.73 m 2 ( 2.3 ) Assess risk/benefit of continuing if eGFR falls below 45",
+          "source_field": "dosage_and_administration",
+          "external_source_span": "initiation, assess renal function with estimated glomerular filtration rate (eGFR) ( 2.2 ) Do not use in patients with eGFR below 30 mL/minute/1.73 m 2 ( 2.2 ) Initiation is not recommended in patients with eGFR between 30 mL/minute/1.73 m 2 to 45 mL/minute/1.73 m 2 ( 2.2 ) Assess risk/benefit of continuing if",
+          "external_source_field": "dosage_and_administration"
+        }
+      ]
+    },
+    {
+      "canonical_name": "enoxaparin",
+      "aliases": [
+        "enoxaparin",
+        "enoxaparin sodium"
+      ],
+      "validation_status": "public_extended_validation",
+      "required_fields": [
+        "dose_mg",
+        "frequency"
+      ],
+      "label": {
+        "source": "openFDA Drug Label API",
+        "set_id": "014c6710-f2c4-fd1e-e063-6394a90ae525",
+        "version": "3",
+        "effective_date": "20240621",
+        "manufacturer": "NorthStar RxLLC",
+        "source_url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name.exact%3A%22ENOXAPARIN%20SODIUM%22&limit=100"
+      },
+      "external_label": {
+        "source": "openFDA Drug Label API",
+        "set_id": "066f27ec-352c-4051-ba29-248e292690db",
+        "version": "7",
+        "effective_date": "20260204",
+        "manufacturer": "Fresenius Kabi USA, LLC",
+        "source_url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name.exact%3A%22ENOXAPARIN%20SODIUM%22&limit=100"
+      },
+      "rules": [
+        {
+          "id": "ENOX-RENAL-001",
+          "section": "Dosage and Administration",
+          "condition_text": "Enoxaparin dosing requires review when creatinine clearance is below 30 mL/min.",
+          "action_text": "Pharmacist should verify the indication-specific reduced regimen.",
+          "severity": "high",
+          "rule_type": "numeric",
+          "keywords": [
+            "crcl",
+            "renal",
+            "creatinine",
+            "dose"
+          ],
+          "threshold": 30.0,
+          "threshold_operator": "<",
+          "high_risk": true,
+          "source_span": "e Renal Impairment The recommended prophylaxis and treatment dosage regimens for patients with severe renal impairment (creatinine clearance <30 mL/min) are described in Table 1 [see Use in Specific Populations (8.7) and Clinical Pharmacology (12.3) ] . Table 1: Dosage Regimens for Patients with Severe Renal Impairment (cr",
+          "source_field": "dosage_and_administration",
+          "external_source_span": "e Renal Impairment The recommended prophylaxis and treatment dosage regimens for patients with severe renal impairment (creatinine clearance <30 mL/min) are described in Table 1 [see Use in Specific Populations (8.7) and Clinical Pharmacology (12.3) ] . Table 1: Dosage Regimens for Patients with Severe Renal Impairment (cr",
+          "external_source_field": "dosage_and_administration"
+        }
+      ]
+    },
+    {
+      "canonical_name": "gabapentin",
+      "aliases": [
+        "gabapentin"
+      ],
+      "validation_status": "public_extended_validation",
+      "required_fields": [
+        "dose_mg",
+        "frequency"
+      ],
+      "label": {
+        "source": "openFDA Drug Label API",
+        "set_id": "01b810b7-f4c8-4412-bbc5-b9220d8770d8",
+        "version": "11",
+        "effective_date": "20240402",
+        "manufacturer": "Bryant Ranch Prepack",
+        "source_url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name.exact%3A%22GABAPENTIN%22&limit=100"
+      },
+      "external_label": {
+        "source": "openFDA Drug Label API",
+        "set_id": "021329d0-7d32-4fd8-81bf-a8b0d8b49e43",
+        "version": "1",
+        "effective_date": "20251204",
+        "manufacturer": "Precision Dose, Inc.",
+        "source_url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name.exact%3A%22GABAPENTIN%22&limit=100"
+      },
+      "rules": [
+        {
+          "id": "GABA-RENAL-001",
+          "section": "Dosage and Administration",
+          "condition_text": "Gabapentin dosage requires review when creatinine clearance is below 60 mL/min.",
+          "action_text": "Pharmacist should select the renal-function dosing band.",
+          "severity": "moderate",
+          "rule_type": "numeric",
+          "keywords": [
+            "crcl",
+            "renal",
+            "creatinine",
+            "dose"
+          ],
+          "threshold": 60.0,
+          "threshold_operator": "<",
+          "high_risk": true,
+          "source_span": "in Dosage Based on Renal Function TID = Three times a day; BID = Two times a day; QD = Single daily dose Renal Function Creatinine Clearance (mL/min) Total Daily Dose Range (mg/day) Dose Regimen (mg) ≥60 900 to 3600 300 TID 400 TID 600 TID 800 TID 1200 TID >30 to 59 400 to 1400 200 BID 300 BID 400 BID 500 BID 700 BID >15 to 29 200 to 700 200 QD 300 QD 400 QD 500 QD 700 QD 15 For patients with creatinine clearance <15 mL/min, reduce daily dose",
+          "source_field": "dosage_and_administration",
+          "external_source_span": "stered single 400 mg oral doses of gabapentin. The mean gabapentin half-life ranged from about 6.5 hours (patients with creatinine clearance > 60 mL/min) to 52 hours (creatinine clearance < 30 mL/min) and gabapentin renal clearance from about 90 mL/min (> 60 mL/min group) to about 10 mL/min (< 30 mL/min). Mean plasma clearance (CL/F) decreased from approximately 190 mL/min to 20 mL/min [see Dosage",
+          "external_source_field": "clinical_pharmacology"
+        }
+      ]
+    },
+    {
+      "canonical_name": "bupropion extended-release",
+      "aliases": [
+        "bupropion xl",
+        "bupropion extended release",
+        "bupropion extended-release"
+      ],
+      "validation_status": "public_extended_validation",
+      "required_fields": [
+        "dose_mg",
+        "frequency",
+        "formulation"
+      ],
+      "label": {
+        "source": "openFDA Drug Label API",
+        "set_id": "004d8121-59d4-46c4-acb8-b2dd097bf556",
+        "version": "3",
+        "effective_date": "20251125",
+        "manufacturer": "Oryza pharmaceuticals Inc.",
+        "source_url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name.exact%3A%22BUPROPION%20HYDROCHLORIDE%22&limit=100"
+      },
+      "external_label": {
+        "source": "openFDA Drug Label API",
+        "set_id": "02275c51-6b3e-434a-bdb5-99135e73f1a4",
+        "version": "6",
+        "effective_date": "20260612",
+        "manufacturer": "REMEDYREPACK INC.",
+        "source_url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name.exact%3A%22BUPROPION%20HYDROCHLORIDE%22&limit=100"
+      },
+      "rules": [
+        {
+          "id": "BUPR-FORM-001",
+          "section": "Dosage and Administration",
+          "condition_text": "Bupropion extended-release tablets must not be crushed, chewed, or divided.",
+          "action_text": "Escalate altered extended-release administration for pharmacist review.",
+          "severity": "high",
+          "rule_type": "formulation",
+          "keywords": [
+            "crushed",
+            "chewed",
+            "divided",
+            "split"
+          ],
+          "high_risk": true,
+          "source_span": "thout talking with your healthcare provider first. Swallow bupropion hydrochloride extended-release tablets (XL) whole. Do not chew, cut, or crush bupropion hydrochloride extended-release tablets (XL). If you do, the medicine will be released into your body too quickly. If this happens you may be more likely to get side effe",
+          "source_field": "spl_medguide",
+          "external_source_span": "thout talking with your healthcare provider first. Swallow bupropion hydrochloride extended-release tablets (XL) whole. Do not chew, cut, or crush bupropion hydrochloride extended-release tablets (XL).If you do, the medicine will be released into your body too quickly. If this happens you may be more likely to get side effec",
+          "external_source_field": "spl_medguide"
+        }
+      ],
+      "inferred_fields": {
+        "formulation": "extended_release"
+      }
+    },
+    {
+      "canonical_name": "metoprolol succinate extended-release",
+      "aliases": [
+        "metoprolol succinate",
+        "metoprolol succinate er",
+        "metoprolol succinate extended-release"
+      ],
+      "validation_status": "public_extended_validation",
+      "required_fields": [
+        "dose_mg",
+        "frequency",
+        "formulation"
+      ],
+      "label": {
+        "source": "openFDA Drug Label API",
+        "set_id": "028049cd-d233-49f9-87fa-ec91e433a49f",
+        "version": "6",
+        "effective_date": "20260406",
+        "manufacturer": "Cardinal Health 107, LLC",
+        "source_url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name.exact%3A%22METOPROLOL%20SUCCINATE%22&limit=100"
+      },
+      "external_label": {
+        "source": "openFDA Drug Label API",
+        "set_id": "09fa1b7f-1911-4bc2-825b-c885a44f5c63",
+        "version": "1",
+        "effective_date": "20221101",
+        "manufacturer": "Proficient Rx LP",
+        "source_url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name.exact%3A%22METOPROLOL%20SUCCINATE%22&limit=100"
+      },
+      "rules": [
+        {
+          "id": "METO-FORM-001",
+          "section": "Dosage and Administration",
+          "condition_text": "Metoprolol succinate extended-release tablets must not be crushed or chewed.",
+          "action_text": "Escalate crushed or chewed administration for pharmacist review.",
+          "severity": "high",
+          "rule_type": "formulation",
+          "keywords": [
+            "crushed",
+            "chewed"
+          ],
+          "high_risk": true,
+          "source_span": "en stabilized. 2.4 Administration Metoprolol succinate extended-release tablets are scored and can be divided; however, do not crush or chew the whole or half tablet.",
+          "source_field": "dosage_and_administration",
+          "external_source_span": "en stabilized. 2.4 Administration Metoprolol succinate extended-release tablets are scored and can be divided; however, do not crush or chew the whole or half tablet.",
+          "external_source_field": "dosage_and_administration"
+        }
+      ],
+      "inferred_fields": {
+        "formulation": "extended_release"
+      }
+    },
+    {
+      "canonical_name": "morphine sulfate extended-release",
+      "aliases": [
+        "morphine sulfate er",
+        "morphine sulfate extended release",
+        "morphine sulfate extended-release"
+      ],
+      "validation_status": "public_extended_validation",
+      "required_fields": [
+        "dose_mg",
+        "frequency",
+        "formulation"
+      ],
+      "label": {
+        "source": "openFDA Drug Label API",
+        "set_id": "07993f6c-146b-4728-a2da-6e93089f78ff",
+        "version": "1",
+        "effective_date": "20260213",
+        "manufacturer": "Bryant Ranch Prepack",
+        "source_url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name.exact%3A%22MORPHINE%20SULFATE%22&limit=100"
+      },
+      "external_label": {
+        "source": "openFDA Drug Label API",
+        "set_id": "19c7d9cc-6ce2-4c5c-8c3f-c24fd3342804",
+        "version": "16",
+        "effective_date": "20260504",
+        "manufacturer": "Rhodes Pharmaceuticals LLC",
+        "source_url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name.exact%3A%22MORPHINE%20SULFATE%22&limit=100"
+      },
+      "rules": [
+        {
+          "id": "MORP-FORM-001",
+          "section": "Dosage and Administration",
+          "condition_text": "Morphine sulfate extended-release tablets must not be crushed or chewed.",
+          "action_text": "Escalate altered extended-release opioid administration immediately.",
+          "severity": "critical",
+          "rule_type": "formulation",
+          "keywords": [
+            "crushed",
+            "chewed"
+          ],
+          "high_risk": true,
+          "source_span": "ine sulfate or following a dose increase. Instruct patients to swallow morphine sulfate extended-release tablets whole; crushing, chewing, or dissolving morphine sulfate extended-release tablets can cause rapid release and absorption of a potentially fatal dose of morphine [see Warnings and Precautions (5.3)] . Accidental Ingestion Accidental ingestion of even one dose of morphine sulfate, especially by children, can result in a fatal ov",
+          "source_field": "boxed_warning",
+          "external_source_span": "extended-release tablets are essential . Instruct patients to swallow morphine sulfate extended-release tablets whole; crushing, chewing, or dissolving morphine sulfate extended-release tablets can cause rapid release and absorption of a potentially fatal dose of morphine. [see Warnings and Precautions (5.2) ]. Accidental Ingestion Accidental ingestion of even one dose of morphine sulfate extended-release tablets, especially by children",
+          "external_source_field": "boxed_warning"
+        }
+      ],
+      "inferred_fields": {
+        "formulation": "extended_release"
+      }
+    },
+    {
+      "canonical_name": "sildenafil",
+      "aliases": [
+        "sildenafil",
+        "sildenafil citrate"
+      ],
+      "validation_status": "public_extended_validation",
+      "required_fields": [
+        "dose_mg",
+        "frequency"
+      ],
+      "label": {
+        "source": "openFDA Drug Label API",
+        "set_id": "00ee09dd-2de0-4dc4-85f6-b51ed6eabd5b",
+        "version": "12",
+        "effective_date": "20250404",
+        "manufacturer": "PD-Rx Pharmaceuticals, Inc.",
+        "source_url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name.exact%3A%22SILDENAFIL%20CITRATE%22&limit=100"
+      },
+      "external_label": {
+        "source": "openFDA Drug Label API",
+        "set_id": "083da718-e934-4941-b083-a19b4ebe3935",
+        "version": "4",
+        "effective_date": "20240122",
+        "manufacturer": "ANI Pharmaceuticals, Inc.",
+        "source_url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name.exact%3A%22SILDENAFIL%20CITRATE%22&limit=100"
+      },
+      "rules": [
+        {
+          "id": "SILD-NITR-001",
+          "section": "Contraindications",
+          "condition_text": "Concomitant sildenafil and nitrate therapy is contraindicated.",
+          "action_text": "Reject concurrent nitrate use and require pharmacist review.",
+          "severity": "critical",
+          "rule_type": "interaction",
+          "keywords": [
+            "drug:sildenafil",
+            "drug:nitroglycerin",
+            "nitrate",
+            "interaction"
+          ],
+          "high_risk": true,
+          "source_span": "way [ see Clinical Pharmacology (12.1 , 12.2 ) ], sildenafil tablets was shown to potentiate the hypotensive effects of nitrates, and its administration to patients who are using nitric oxide donors such as organic nitrates or organic nitrites in any form either regularly and/or intermittently is therefore contraindicated. After patients have taken sildenafil tablets, it is unknown when nitrates, if necessary, can be safely administered. Although plasma levels of sildenafil at 24 hours post dose ar",
+          "source_field": "contraindications",
+          "external_source_span": "7 DRUG INTERACTIONS Nitrates Concomitant use of sildenafil with nitrates in any form is contraindicated [see Contraindications (4)] . Strong CYP3A Inhibitors Concomitant use of sildenafil with strong CYP3A inhibitors is not recommended [see Clinical Pharmacology (12.3)] . Moderate-t",
+          "external_source_field": "drug_interactions"
+        }
+      ]
+    },
+    {
+      "canonical_name": "simvastatin",
+      "aliases": [
+        "simvastatin"
+      ],
+      "validation_status": "public_extended_validation",
+      "required_fields": [
+        "dose_mg",
+        "frequency"
+      ],
+      "label": {
+        "source": "openFDA Drug Label API",
+        "set_id": "121b0e00-abb7-4e07-a7b2-311be89fabb7",
+        "version": "1",
+        "effective_date": "20190325",
+        "manufacturer": "Aphena Pharma Solutions - Tennessee, LLC",
+        "source_url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name.exact%3A%22SIMVASTATIN%22&limit=100"
+      },
+      "external_label": {
+        "source": "openFDA Drug Label API",
+        "set_id": "14bd8444-1556-4636-9e56-28da21a852fc",
+        "version": "102",
+        "effective_date": "20231030",
+        "manufacturer": "Bryant Ranch Prepack",
+        "source_url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name.exact%3A%22SIMVASTATIN%22&limit=100"
+      },
+      "rules": [
+        {
+          "id": "SIMV-CLAR-001",
+          "section": "Contraindications",
+          "condition_text": "Concomitant simvastatin and clarithromycin therapy requires interruption or avoidance.",
+          "action_text": "Escalate for statin interruption or alternative antimicrobial selection.",
+          "severity": "critical",
+          "rule_type": "interaction",
+          "keywords": [
+            "drug:simvastatin",
+            "drug:clarithromycin",
+            "interaction"
+          ],
+          "high_risk": true,
+          "source_span": "ng Recommendations Strong CYP3A4 inhibitors (e.g. itraconazole, ketoconazole, posaconazole, voriconazole, erythromycin, clarithromycin, telithromycin, HIV protease inhibitors, boceprevir, telaprevir, nefazodone cobicistat-containing products), gemfibrozil, cyclosporine, danazol Contraindicated with simvastatin Verapamil, diltiazem, dronedarone Do not exceed 10 mg simvastatin daily Amiodarone, amlodipine, ranolazine Do not exceed 20 mg simvastatin daily Lomitapide For pa",
+          "source_field": "drug_interactions",
+          "external_source_span": "ng Recommendations Strong CYP3A4 inhibitors (e.g., itraconazole, ketoconazole,posaconazole, voriconazole, erythromycin, clarithromycin, telithromycin, HIV protease inhibitors, boceprevir, telaprevir, nefazodone, cobicistat-containing products), gemfibrozil, cyclosporine, danazol Contraindicated with simvastatin Niacin (≥1 g/day) For Chinese patients, notrecommended with simvastatin Verapamil, diltiazem, dronedarone Do not exceed 10 mg simvastatin daily Amiodarone, amlodi",
+          "external_source_field": "drug_interactions"
+        }
+      ]
+    },
+    {
+      "canonical_name": "clopidogrel",
+      "aliases": [
+        "clopidogrel",
+        "clopidogrel bisulfate"
+      ],
+      "validation_status": "public_extended_validation",
+      "required_fields": [
+        "dose_mg",
+        "frequency"
+      ],
+      "label": {
+        "source": "openFDA Drug Label API",
+        "set_id": "0078fb3d-3595-4ae1-a059-1d5e81c879cf",
+        "version": "18",
+        "effective_date": "20240517",
+        "manufacturer": "Aurobindo Pharma Limited",
+        "source_url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name.exact%3A%22CLOPIDOGREL%20BISULFATE%22&limit=100"
+      },
+      "external_label": {
+        "source": "openFDA Drug Label API",
+        "set_id": "03bec9ad-cd22-44d3-9b82-2796157de1d1",
+        "version": "22",
+        "effective_date": "20250227",
+        "manufacturer": "PD-Rx Pharmaceuticals, Inc.",
+        "source_url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name.exact%3A%22CLOPIDOGREL%20BISULFATE%22&limit=100"
+      },
+      "rules": [
+        {
+          "id": "CLOP-OMEP-001",
+          "section": "Drug Interactions",
+          "condition_text": "Concomitant clopidogrel and omeprazole should be avoided.",
+          "action_text": "Escalate for review of reduced clopidogrel antiplatelet activity.",
+          "severity": "high",
+          "rule_type": "interaction",
+          "keywords": [
+            "drug:clopidogrel",
+            "drug:omeprazole",
+            "interaction"
+          ],
+          "high_risk": true,
+          "source_span": "f clopidogrel and a reduction in platelet inhibition [see Warnings and Precautions (5.1) ] . Omeprazole or Esomeprazole Avoid concomitant use of clopidogrel with omeprazole or esomeprazole. In clinical studies, omeprazole was shown to reduce significantly the antiplatelet activity of clopidogrel when given concomitantly or 12 hours apart. A similar reduction in anti",
+          "source_field": "drug_interactions",
+          "external_source_span": "clopidogrel and a reduction in platelet inhibition [see Warnings and Precautions ( 5.1 )] . Omeprazole or Esomeprazole Avoid concomitant use of clopidogrel tablets with omeprazole or esomeprazole. In clinical studies, omeprazole was shown to reduce significantly the antiplatelet activity of clopidogrel tablets when given concomitantly or 12 hours apart. A similar reduction",
+          "external_source_field": "drug_interactions"
+        }
+      ]
+    }
+  ]
+}

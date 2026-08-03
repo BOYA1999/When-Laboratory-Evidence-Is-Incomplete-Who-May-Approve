@@ -1,0 +1,19 @@
+{
+  "provenance": "author-provided aggregate confirmation in the 2026-07-28 revision session",
+  "reviewers": 5,
+  "prior_synthetic_records_reviewed": 1540,
+  "system_outputs_visible_during_review": false,
+  "consensus_process": "discussion after case review",
+  "consensus_labels": "binary pass or fail",
+  "aggregate_matches_with_prior_mcp_governed": 1540,
+  "aggregate_concordance": 1.0,
+  "individual_pre_consensus_labels_retained": false,
+  "case_level_consensus_file_retained": false,
+  "permitted_analysis": "descriptive blinded consensus concordance only",
+  "prohibited_analysis": [
+    "Fleiss kappa",
+    "Gwet AC1",
+    "individual-rater agreement",
+    "case-level expert reanalysis"
+  ]
+}

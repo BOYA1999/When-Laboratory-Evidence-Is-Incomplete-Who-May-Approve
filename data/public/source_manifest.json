@@ -1,0 +1,29 @@
+{
+  "retrieved_at": "2026-07-27T12:05:49.416423+00:00",
+  "files": {
+    "openfda_labels_200.json": {
+      "bytes": 7448126,
+      "sha256": "5f792fd1e2172b8c1371cab70c068235bb886262a147c86d037e3b104fda2bf7"
+    },
+    "sentinel_openfda_labels.json": {
+      "bytes": 246540,
+      "sha256": "5751c77c846b7ae34b14dea11bc523caacab0e6e8e93c312e40884393626981b"
+    },
+    "synthea_sample_data_csv_apr2020.zip": {
+      "bytes": 8982431,
+      "sha256": "4194b18c11eaedcf0d5d5dd448d8ac9661f14381e2ef9f109215dc42266cd38a"
+    }
+  },
+  "source_urls": {
+    "synthea_sample_data_csv_apr2020.zip": "https://raw.githubusercontent.com/synthetichealth/synthea-sample-data/main/downloads/synthea_sample_data_csv_apr2020.zip",
+    "openfda_pages": [
+      "https://api.fda.gov/drug/label.json?limit=100&skip=0",
+      "https://api.fda.gov/drug/label.json?limit=100&skip=100"
+    ],
+    "openfda_sentinel": [
+      "https://api.fda.gov/drug/label.json?search=openfda.generic_name%3A%22ceftazidime%22&limit=1",
+      "https://api.fda.gov/drug/label.json?search=openfda.generic_name%3A%22nifedipine%22&limit=1",
+      "https://api.fda.gov/drug/label.json?search=openfda.generic_name%3A%22warfarin%20sodium%22&limit=1"
+    ]
+  }
+}

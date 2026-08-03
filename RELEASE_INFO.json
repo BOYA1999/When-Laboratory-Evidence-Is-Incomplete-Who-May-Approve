@@ -1,0 +1,11 @@
+{
+  "name": "Executable Authority Boundary for MCP-Integrated Prescription Review",
+  "version": "2.0.0",
+  "release_date": "2026-08-03",
+  "study_seed": 20260728,
+  "license": "MIT for repository-authored code; third-party terms remain applicable",
+  "clinical_data_included": false,
+  "model_weights_included": false,
+  "current_synthetic_cases": 660,
+  "drug_laboratory_domains": 11
+}

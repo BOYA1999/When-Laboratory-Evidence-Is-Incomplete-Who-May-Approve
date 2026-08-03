@@ -1,0 +1,28 @@
+{
+  "dataset_name": "Public-label policy-supervised router pairs",
+  "pair_count": 1200,
+  "unique_rule_groups": 300,
+  "label_counts": {
+    "ExpertA": 400,
+    "ExpertB": 400,
+    "ExpertC": 400
+  },
+  "label_provenance": "Deterministic routing policy; no pharmacist annotation",
+  "rule_source": "openFDA Drug Label API, 200 records",
+  "indicator_source": "Synthea official CSV sample data",
+  "seed": 20260115,
+  "feature_names": [
+    "rule_has_numeric",
+    "rule_has_comparator",
+    "rule_has_unit",
+    "indicator_is_numeric",
+    "lexical_overlap",
+    "rule_has_negation",
+    "section_is_interaction",
+    "section_is_contraindication",
+    "section_is_dosage",
+    "severity_is_high",
+    "clause_count_scaled",
+    "token_count_scaled"
+  ]
+}
